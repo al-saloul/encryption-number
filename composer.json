@@ -1,22 +1,25 @@
 {
-  "name": "al-saloul/encryption",
-  "description": "Simple number encryption and decryption package",
-  "type": "library",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Alsaloul\\Encryption\\": "src/"
-    }
-  },
-  "authors": [
-    {
-      "name": "Mohammed Alsaloul",
-      "email": "eng.alsaloul.mohammed@gmail.com"
-    }
-  ],
-  "minimum-stability": "stable",
-  "require": {},
-  "keywords": [
+    "name": "al-saloul/encryption",
+    "description": "Simple number encryption and decryption package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alsaloul\\Encryption\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Mohammed Alsaloul",
+            "email": "eng.alsaloul.mohammed@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "keywords": [
         "encryption",
         "decryption",
         "number encryption",
