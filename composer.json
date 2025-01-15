@@ -15,5 +15,12 @@
     }
   ],
   "minimum-stability": "stable",
-  "require": {}
+  "require": {},
+  "keywords": [
+        "encryption",
+        "decryption",
+        "number encryption",
+        "laravel package",
+        "security"
+    ]
 }
