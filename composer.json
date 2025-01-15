@@ -1,0 +1,13 @@
+{
+    "name": "al-saloul/encryption",
+    "description": "Simple number encryption and decryption package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "Alsaloul\\Encryption\\": "src/"
+      }
+    },
+    "require": {}
+  }
+  
