@@ -27,3 +27,16 @@ if (! function_exists('decrypt_numbers')) {
         return Encryption::decryptNumbers($value);
     }
 }
+
+if (! function_exists('is_encrypted')) {
+    /**
+     * Check if a given string is encrypted.
+     *
+     * @param string $encryptedString
+     * @return bool
+     */
+    function is_encrypted(string $encryptedString)
+    {
+        return Encryption::isEncrypted($encryptedString);
+    }
+}

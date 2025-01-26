@@ -46,15 +46,23 @@ The **Laravel Number Encryption Package** provides robust encryption and decrypt
    For quick and straightforward usage, helper functions are available globally throughout your Laravel project after installing the package.
 
    ```php
-   // Encrypt a number using the helper function
-   $encrypted = encrypt_number(12345);
 
-   // Decrypt the encrypted string using the helper function
-   $decrypted = decrypt_number($encrypted);
+    // Encrypt a number using the helper function
+    $encrypted = encrypt_numbers(12345);
+    // Output: "UQ9rovS*(Yr5inVd"
 
-   // Output results
-   echo "Encrypted: " . $encrypted . PHP_EOL;
-   echo "Decrypted: " . $decrypted . PHP_EOL;
+    // Check if the encrypted string is indeed encrypted
+    $isEncrypted = is_encrypted($encrypted);
+    // Output: true
+
+    // Decrypt the encrypted string using the helper function
+    $decrypted = decrypt_numbers($encrypted);
+    // Output: 12345
+
+    // Output results
+    echo "Encrypted: " . $encrypted . PHP_EOL;
+    echo "Is Encrypted: " . ($isEncrypted ? 'Yes' : 'No') . PHP_EOL;
+    echo "Decrypted: " . $decrypted . PHP_EOL;
    ```
 
    *Note: Ensure that the helper functions are properly registered and autoloaded in your Laravel application.*
